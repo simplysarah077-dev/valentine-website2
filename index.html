@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Valentine</title>
+  <style>
+    body {
+      background: #fdecef;
+      font-family: Arial;
+      text-align: center;
+      padding-top: 120px;
+    }
+    input, button {
+      font-size: 18px;
+      padding: 10px;
+      margin: 10px;
+    }
+  </style>
+</head>
+<body>
+
+<audio autoplay loop>
+  <source src="{{ url_for('static', filename='music.mp3') }}" type="audio/mpeg">
+</audio>
+
+<h1>Hey you 💗</h1>
+<p>Enter your name</p>
+
+<form method="post">
+  <input type="text" name="name" required placeholder="Your name">
+  <br>
+  <button type="submit">Open Card</button>
+</form>
+
+</body>
+</html>
